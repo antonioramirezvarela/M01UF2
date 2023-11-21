@@ -1,5 +1,11 @@
 #!/bin/bash
 
+IP=`ip address | grep inet | grep -i enp0s3 | cut -d " " -f 6 | cut -d "/" -f 1`
+
+echo $IP
+
+SERVER="localhost"
+
 echo "cliente EFTP"
 
 echo "(1) Send"
